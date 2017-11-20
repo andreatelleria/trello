@@ -145,7 +145,7 @@ nav ul li button {
 	margin-right: 5px;
 }
 
-.sub-nav li:first-child {
+.sub-nav li:first-child, .sub-nav li:nth-child(2) {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
