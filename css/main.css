@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #0079BF;
+}
+
+/*Barra de navegación*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+	height: 50px;
+  color: #FFFFFF;
+	background-color: #026AA7;
+}
+
+#btnTrello {
+	position: absolute;
+  top: 9px;
+	left: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	width: 100px;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Arial;
+	line-height: 30px;
+	font-weight: 700;
+  background-color: #67A6CA;
+}
+
+#btnTrello i {
+	padding-right: 5px;
+  cursor: pointer;
+	font-size: 17px;
+}
+
+nav form input {
+  width: 180px;
+	height: 30px;
+  position: absolute;
+  left: 115px;
+	top: 9px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+  background-color: #67A6CA;
+}
+
+.fa-search {
+	position: absolute;
+	margin-left: 260px;
+	margin-top: 9px;
+	padding: 5px;
+	font-size: 18px;
+}
+
+#trello {
+  position: absolute;
+  top: 15px;
+	font-size: 20px;
+	color: #67A6CA;
+	margin-left: 610px;
+	font-family: "Helvetica Neue", Arial, Helvet;
+	line-height: 18px;
+}
+
+#trello .fa-trello {
+	padding-right: 5px;
+	font-size: 20px;
+}
+
+nav ul {
+  margin-top: 9px;
+	list-style: none;
+	border: 1px solid transparent;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li:first-child {
+	margin-left: 1150px;
+}
+
+nav ul li button {
+  padding: 2px 5px;
+  border: 1px solid transparent;
+	border-radius: 3px;
+	font-size: 22px;
+  background-color: #67A6CA;
+}
+
+.fa-plus, .fa-info-circle, .fa-bell-o {
+	color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btnProfile {
+	padding: 7px 5px;
+	border-radius: 20px;
+  cursor: pointer;
+	font-size: 15px;
+  color: #FFFFFF;
+}
+
+/*Sub-barra de navegación*/
+.sub-nav {
+	height: 45px;
+	clear: both;
+	background-color: #026AA7;
+}
+
+.sub-nav ul {
+	list-style: none;
+	height: 45px;
+	margin-top: 45px;
+  margin-left: 10px;
+	padding: 8px;
+}
+
+.sub-nav li {
+	float: left;
+	margin-right: 5px;
+  padding: 0 10px;
+  border-radius: 3px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #F6F6F6;
+}
+
+.sub-nav li .fa {
+	font-size: 12px;
+}
+
+.sub-nav li .fa-lock {
+	margin-right: 5px;
+}
+
+.sub-nav li:first-child {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+.sub-nav li:last-child {
+	float: right;
+}
+
+.sub-nav span {
+	text-decoration: underline;
+	margin-left: 5px;
+}
+
+.sub-nav li:hover {
+	cursor: pointer;
+	background-color: #0079BF;
+}
+
+#addList {
+  width: 270px;
+  margin-top: 10px;
+  margin-left: 20px;
+	padding: 15px 5px;
+  border: 1px solid transparent;
+	border-radius: 5px;
+  font-size: 17px;
+	color: #67A6CA;
+  background-color: #0067A3;
+}
+
+#listContainer {
+	height: auto;
+	display: inline-flex;
+}
+
+#listContainer div {
+	float: left;
+	margin-left: 19px;
+	width: 300px;
+	margin-top: 10px;
+	margin-right: 10px;
+  padding: 5px;
+	border 1px solid #AAAAAA;
+	border-radius: 2px;
+	vertical-align: top;
+  background-color: #E2E4E6;
+}
+
+#listContainer a {
+	text-decoration: none;
+}
+#listContainer a:hover {
+	text-decoration: underline;
+}
+
+#newList div {
+	margin: 10px 0px 0px 0px;
+	padding: 5px 0px 0px 1px;
+}
+
+#hiddenForm {
+	background-color: #E2E4E6;
+	width: 310px;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+	text-align: top;
+	border: 1px solid #AAAAAA;
+	border-radius: 2px;
+	vertical-align: top;
+
+}
+#hiddenForm div {
+	display: inline-block;
+
+}
+
+#hiddenList {
+	width: 270px;
+	padding: 15px;
+	margin-left: 4px;
+	margin-top: 5px;
+  border: 1px solid #AAAAAA;
+	border-radius: 5px;
+  background-color: #D6D8DA;
+}
+
+#hiddenList::placeholder {
+	font-size: 17px;
+  color: #AAAAAA;
+}
+
+#hiddenForm button {
+  width: 100px;
+  margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+  padding: 5px 0px;
+  cursor: pointer;
+  border: 1px solid transparent;
+	border-radius: 2px;
+	font-size: 17px;
+  color: #FFFFFF;
+  background-color: #519839;
+}
+
+#hiddenForm i {
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 25px;
+}
+
+
+#formContainer {
+	height: auto;
+	display: block;
+}
+
+#formContainer div {
+	/*width: 310px;*/
+	margin-right: 10px;
+	background-color: #E2E4E6;
+  border-radius: 1px;
+	margin-top: -1px;
+	display: inline-block;
+}
+
+#formContainer form textarea {
+	width: 295px;
+	height: 54px;
+	resize: none;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+#formContainer form button {
+  width: 100px;
+  margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+  padding: 5px 0px;
+  border: 1px solid transparent;
+	border-radius: 2px;
+	font-size: 17px;
+  color: #FFFFFF;
+  background-color: #519839;
+}
+
+#formContainer i {
+	margin-left: 20px;
+	font-size: 25px;
+}

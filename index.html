@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trello</title>
+    <!-- Fuentes -->
+	  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
+	  <!-- Iconos -->
+	  <script src="https://use.fontawesome.com/5317c4f18c.js"></script>
+    <!-- Archivo CSS vinculado -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <!-- Botón para acceder a los tableros -->
+      <button type="button" name="button" id="btnTrello"><i class="fa fa-trello" aria-hidden="true"></i>Tableros</button>
+      <!-- Formulario de búsqueda -->
+      <div>
+        <form>
+          <input type="text" id="search">
+        </form>
+        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+      </div>
+      <!-- Icono central de Trello -->
+      <span id="trello"><i class="fa fa-trello" aria-hidden="true"></i>Trello</span>
+      <!-- Iconos y foto de perfil a la derecha de la barra de navegación -->
+      <ul>
+        <li><button><i class="fa fa-plus" aria-hidden="true"></i></button></li>
+        <li><button><i class="fa fa-info-circle" aria-hidden="true"></i></button></li>
+        <li><button><i class="fa fa-bell-o" aria-hidden="true"></i></button></li>
+        <li><button id="btnProfile">AT</button></li>
+      </ul>
+    </nav>
+
+    <!-- Sub-barra de navegación -->
+    <div class="sub-nav">
+      <ul>
+        <li>Tablero -</li>
+				<li>Reto de Código</li>
+				<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+        <li><i class="fa fa-lock" aria-hidden="true"></i>Privado</li>
+        <li>··· <span>Mostrar menú</span></li>
+      </ul>
+    </div>
+
+    <section id="container">
+      <div id="list">
+        <button type="button" name="button" id="addList">Añadir una lista...</button>
+      </div>
+      <div id="boards">
+        <div id="listContainer">
+        </div>
+        <div id="formContainer">
+        </div>
+        <div id="hiddenForm">
+          <input type="text" id="hiddenList" placeholder=""Añadir una lista..."">
+          <button type="button" id="save">Guardar</button>
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Archivo Javascript vinculado -->
+    <script type="text/javascript" src="js/app.js">
+    </script>
+  </body>
+</html>
